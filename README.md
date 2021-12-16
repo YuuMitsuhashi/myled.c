@@ -3,7 +3,7 @@
 現時点では講義の通り入力によりLEDのONOFFを切り替えられるもの  
 ***
 
-## 動作環境
+## 環境
 ・Raspberry Pi 4  
 ・OS Ubuntu 20.04 sever
 ***
@@ -19,21 +19,20 @@
 
 ***
 
-## 使用方法について  
-・以下の手順でコマンド入力インストール
- `$ git clone https://github.com/YuuMitsuhashi/myled.c`  
+## 動作手順    
+ `$ git clone https://github.com/YuuMitsuhashi/myled.c`　クローンをする 
  
- `$ cd myled.c/`  
+ `$ cd myled.c/` ディレクトリ移動 
  
- `$ make`
+ `$ make` ビルド
  
- `$ sudo insmod myled.ko`
+ `$ sudo insmod myled.ko` カーネルモジュールをロードする
  
- `$ sudo chmod 666 /dev/myled0`  
+ `$ sudo chmod 666 /dev/myled0` アクセス権限の変更  
  
- ・削除はこちら  
- `$ sudo rmmod myled`  
- `$ make clean`  
+ `$ sudo rmmod myled` カーネルモジュールをアンロード  
+ 
+ `$ make clean` ビルドしたファイルの削除
  
  ***
  
