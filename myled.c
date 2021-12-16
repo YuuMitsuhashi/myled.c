@@ -1,5 +1,5 @@
 /*LICENSE:GNU General Public License v3.0*/
-/*Copyright (c) 2021 Ryuichi Ueda*/
+/*Copyright (c) 2021 Ryuichi Ueda All rights reserved*/
 #include<linux/module.h>
 #include<linux/fs.h>
 #include<linux/cdev.h>
@@ -27,8 +27,10 @@ MODULE_VERSION("0.0.1");
         
        if(c == '0'){
 	       gpio_base[10] = 1 << 25;
+	       gpio_base[10] = 1 << 18;
        }else if(c == '1'){
 	       gpio_base[7] = 1 << 25;
+	       gpio_base[7] = 1 << 18;
        }	       
 
 	return 1;
@@ -80,11 +82,18 @@ MODULE_VERSION("0.0.1");
 
 	gpio_base = ioremap_nocache(0xfe200000, 0xA0);
 
-	const u32 led = 25;
-	const u32 index = led/10;
-	const u32 shift = (led%10)*3;
-	const u32 mask = ~(0x7<<shift);
-	gpio_base[index] = (gpio_base[index] & mask) | (0x1 << shift);	
+	const u32 led1 = 25;
+	const u32 index1 = led1/10;
+	const u32 shift1 = (led1%10)*3;
+	const u32 mask1 = ~(0x7<<shift1);
+	gpio_base[index1] = (gpio_base[index1] & mask1) | (0x1 << shift1);	
+
+	
+	const u32 led2 = 18;
+	const u32 index2 = led2/10;
+	const u32 shift2 = (led2%10)*3;
+	const u32 mask2 = ~(0x7<<shift2);
+	gpio_base[index2] = (gpio_base[index2] & mask2) | (0x1 << shift2);
 
 	return 0;
 }
