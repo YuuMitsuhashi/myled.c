@@ -1,5 +1,6 @@
 /*LICENSE:GNU General Public License v3.0*/
-/*Copyright (c) 2021 Ryuichi Ueda All rights reserved*/
+/*Copyright (c) 2021 Yuu Mitsuhashi,Ryuichi Ueda  All rights reserved*/
+
 #include<linux/module.h>
 #include<linux/fs.h>
 #include<linux/cdev.h>
