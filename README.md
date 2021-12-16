@@ -23,5 +23,11 @@
 [インストール]  
 ・以下の手順でコマンド入力  
  `$ git clone https://github.com/YuuMitsuhashi/myled.c`  
-
-
+ 
+ `$ cd myled.c/`  
+ 
+ `$ make`
+ 
+ `$ sudo insmod myled.ko`
+ 
+ `$ sudo chmod 666 /dev/myled0`
