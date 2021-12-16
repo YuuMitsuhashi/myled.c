@@ -21,7 +21,7 @@
 
 ## 使用方法について
 [インストール]  
-・以下の手順でコマンド入力
- $ git clone https://github.com/YuuMitsuhashi/myled.c
+・以下の手順でコマンド入力  
+ '$ git clone https://github.com/YuuMitsuhashi/myled.c'  
 
 
