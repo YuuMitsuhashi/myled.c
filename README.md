@@ -1,25 +1,17 @@
 # ロボットシステム学課題1～LEDの点灯～
 4sのロボットシステム学でLEDを点灯させるデバイスドライバを作成  
-Rasberry Pi4を使用し、
+Rasberry Pi4にUbuntuをインストールし動作を行う  
 現時点では講義の通り入力によりLEDのONOFFを切り替えられるもの  
 ***  
 
 ## 使用した部品や機器　　
 ・Rasberry Pi 4  
-・LED  
+・LED(青色)  
 ・ジャンパワイヤ×2  
 ・抵抗 220Ω×1  
 ***
 
-## 回路図とピン配置
-
-***
-
 ## 動作手順    
- `$ git clone https://github.com/YuuMitsuhashi/myled.c`　クローンをする 
- 
- `$ cd myled.c/`  ディレクトリ移動 
- 
  `$ make`  ビルド
  
  `$ sudo insmod myled.ko`  カーネルモジュールをロードする
@@ -47,6 +39,9 @@ Rasberry Pi4を使用し、
  ## LICENSE  
   GNU General Public License v3.0
   
+ ## 今後の予定
+  LEDを2つ別のピンで使用し交互に点灯するデバイスドライバを作成する  
+  環境はすべて同じで、LED,抵抗それぞれ1個ずつ追加. デバイスドライバの変更
   ***
  
  
