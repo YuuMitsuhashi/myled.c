@@ -22,17 +22,17 @@
 ## 動作手順    
  `$ git clone https://github.com/YuuMitsuhashi/myled.c`　クローンをする 
  
- `$ cd myled.c/` ディレクトリ移動 
+ `$ cd myled.c/`  ディレクトリ移動 
  
- `$ make` ビルド
+ `$ make`  ビルド
  
- `$ sudo insmod myled.ko` カーネルモジュールをロードする
+ `$ sudo insmod myled.ko`  カーネルモジュールをロードする
  
- `$ sudo chmod 666 /dev/myled0` アクセス権限の変更  
+ `$ sudo chmod 666 /dev/myled0`  アクセス権限の変更  
  
- `$ sudo rmmod myled` カーネルモジュールをアンロード  
+ `$ sudo rmmod myled`  カーネルモジュールをアンロード  
  
- `$ make clean` ビルドしたファイルの削除
+ `$ make clean`  ビルドしたファイルの削除
  
  ***
  
