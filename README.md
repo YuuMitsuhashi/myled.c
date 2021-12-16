@@ -34,6 +34,7 @@ Rasberry Pi4にUbuntuをインストールし動作を行う
  ***
  
  ## 回路図と使用したGPIOピン  
+ https://user-images.githubusercontent.com/72642701/146400441-40273226-e41a-4c56-aee6-cc1e4db8d921.jpg
  
  
  ## 実行した動画  
