@@ -1,4 +1,5 @@
-
+/*LICENSE:GNU General Public License v3.0*/
+/*Copyright (c) 2021 Ryuichi Ueda*/
 #include<linux/module.h>
 #include<linux/fs.h>
 #include<linux/cdev.h>
@@ -6,7 +7,7 @@
 #include<linux/uaccess.h>
 #include<linux/io.h>
 
-MODULE_AUTHOR("Yuu Mitsuhashi");
+MODULE_AUTHOR("Yuu Mitsuhashi,Ryuichi Ueda");
 MODULE_DESCRIPTION("driver for LED control");
 MODULE_LICENSE("GPL");
 MODULE_VERSION("0.0.1");
