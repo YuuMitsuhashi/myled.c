@@ -19,9 +19,8 @@
 
 ***
 
-## 使用方法について
-[インストール]  
-・以下の手順でコマンド入力  
+## 使用方法について  
+・以下の手順でコマンド入力インストール
  `$ git clone https://github.com/YuuMitsuhashi/myled.c`  
  
  `$ cd myled.c/`  
@@ -30,4 +29,34 @@
  
  `$ sudo insmod myled.ko`
  
- `$ sudo chmod 666 /dev/myled0`
+ `$ sudo chmod 666 /dev/myled0`  
+ 
+ ・削除はこちら  
+ `$ sudo rmmod myled`  
+ `$ make clean`  
+ 
+ ***
+ 
+ ## 実行方法
+ ・LEDの点灯  
+ `$ echo 1 > /dev/myled0`
+ 
+ ・LEDの消灯  
+ `$ echo 0 > /dev/myled0`  
+ 
+ ***
+ 
+ ## 実行した動画  
+  https://youtu.be/QDOI0Hoa17U
+  
+ ## LICENSE  
+  GNU General Public License v3.0
+  
+  ***
+ 
+ 
+ 
+ 
+ 
+ 
+ 
