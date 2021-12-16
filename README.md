@@ -42,7 +42,7 @@ Rasberry Pi4にUbuntuをインストールし動作を行う
 
  
  ## 実行した動画  
-  https://youtu.be/QDOI0Hoa17U
+  https://www.youtube.com/watch?v=_pElwhP2Sic
   
  ## LICENSE  
   GNU General Public License v3.0
