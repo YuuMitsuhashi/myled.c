@@ -1,7 +1,15 @@
-# About Assignment
-This is a device driver repository for turning on LEDs.  
-It is a task to make a device driver that turn on LEDs using Rasberry Pi.
+# ロボットシステム学課題1～LEDの点灯～
+4sのロボットシステム学でLEDを点灯させるデバイスドライバを作成　　
+現時点では講義の通り入力によりLEDのONOFFを切り替えられるもの
 
-# Licensing
-This source code is licensed under GPLv3.  
-Copyright (c) 2021 RyuichiUeda
+## 動作環境
+・Raspberry Pi 4  
+・OS Ubuntu 20.04 sever
+
+## 使用した部品や機器　　
+・Rasberry Pi 4  
+・LED  
+・ジャンパワイヤ×2  
+・抵抗 220Ω×1  
+
+
