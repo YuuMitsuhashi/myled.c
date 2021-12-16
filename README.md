@@ -1,12 +1,8 @@
 # ロボットシステム学課題1～LEDの点灯～
 4sのロボットシステム学でLEDを点灯させるデバイスドライバを作成  
+Rasberry Pi4を使用し、
 現時点では講義の通り入力によりLEDのONOFFを切り替えられるもの  
-***
-
-## 環境
-・Raspberry Pi 4  
-・OS Ubuntu 20.04 sever
-***
+***  
 
 ## 使用した部品や機器　　
 ・Rasberry Pi 4  
