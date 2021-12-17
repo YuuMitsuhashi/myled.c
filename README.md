@@ -56,8 +56,8 @@ Rasberry Pi4にUbuntuをインストールし動作を行う
   myled.c is under GNU General Public License v3.0(https://www.gnu.org/licenses/gpl-3.0.ja.html)  
   
  ## 今後の予定
-  LEDを2つ別のピンで使用し交互に点灯するデバイスドライバを作成する  
-  環境はすべて同じで、LED,抵抗それぞれ1個ずつ追加. デバイスドライバの変更
+  今後はLEDを2つ別のピンで使用し交互に点灯するデバイスドライバを作成する予定  
+  環境はすべて同じで、デバイスドライバの変更を行う.
   ***
  
  
