@@ -2,7 +2,7 @@
 ロボットシステム学課題1～LEDの点灯～
 4sのロボットシステム学でLEDを点灯させるデバイスドライバを作成  
 Rasberry Pi4にUbuntuをインストールし動作を行う  
-現在(12/17の時点)では講義の内容を踏まえて、LEDを2個に増やし片方ずつONOFFを切り替えられるものである   
+講義の内容を踏まえて、LEDを2個に増やし、交互に点滅させるものである。   
 *** 
 ## 実行した動画  
   https://www.youtube.com/watch?v=_pElwhP2Sic
@@ -13,7 +13,10 @@ Rasberry Pi4にUbuntuをインストールし動作を行う
  `$ echo 1 > /dev/myled0`  
  
  ・LED(赤)の点灯  
- `$ echo 2 > /dev/myled0`
+ `$ echo 2 > /dev/myled0`  
+ 
+ ・2つのLEDが交互に点滅
+ `$ echo 3 > /dev/myled0`
  
  ・LEDの消灯  
  `$ echo 0 > /dev/myled0`  
@@ -57,10 +60,6 @@ Rasberry Pi4にUbuntuをインストールし動作を行う
   
  ## LICENSE  
   myled.c is under GNU General Public License v3.0(https://www.gnu.org/licenses/gpl-3.0.ja.html)  
-  
- ## 今後の予定
-  今後はLEDを2つ別のピンで使用し交互に点灯するデバイスドライバを作成する予定  
-  環境はすべて同じで、デバイスドライバの変更を行う.
   ***
  
  
