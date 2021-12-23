@@ -7,6 +7,7 @@
 #include<linux/device.h>
 #include<linux/uaccess.h>
 #include<linux/io.h>
+#include<linux/delay.h>
 
 MODULE_AUTHOR("Yuu Mitsuhashi,Ryuichi Ueda");
 MODULE_DESCRIPTION("driver for LED control");
@@ -17,6 +18,8 @@ MODULE_VERSION("0.0.1");
  static struct cdev cdv;
  static struct class *cls = NULL;
  static volatile u32 *gpio_base = NULL;
+
+ 
 
  static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_t* pos)
 {
@@ -31,7 +34,11 @@ MODULE_VERSION("0.0.1");
 	       gpio_base[10] = 1 << 18;
        }else if(c == '1'){
 	       gpio_base[7] = 1 << 25;
+	       gpio_base[10] = 1 << 18;
+       }
+       else if (c == '2'){
 	       gpio_base[7] = 1 << 18;
+	       gpio_base[10] = 1 << 25;
        }	       
 
 	return 1;
