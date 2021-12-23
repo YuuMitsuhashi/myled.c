@@ -5,7 +5,7 @@ Rasberry Pi4にUbuntuをインストールし動作を行う
 講義の内容を踏まえて、LEDを2個に増やし、交互に点滅させるものである。   
 *** 
 ## 実行した動画  
-  https://www.youtube.com/watch?v=_pElwhP2Sic
+  https://www.youtube.com/watch?v=1PtQh-5hERE
   
 ## 実行方法  
 以下の文をUbuntuのターミナル画面で入力  
@@ -15,7 +15,7 @@ Rasberry Pi4にUbuntuをインストールし動作を行う
  ・LED(赤)の点灯  
  `$ echo 2 > /dev/myled0`  
  
- ・2つのLEDが交互に点滅
+ ・2つのLEDが交互に点滅  
  `$ echo 3 > /dev/myled0`
  
  ・LEDの消灯  
