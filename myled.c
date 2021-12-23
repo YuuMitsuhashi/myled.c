@@ -39,7 +39,25 @@ MODULE_VERSION("0.0.1");
        else if (c == '2'){
 	       gpio_base[7] = 1 << 18;
 	       gpio_base[10] = 1 << 25;
-       }	       
+       }
+       else if (c == '3'){
+	int i = 0;       
+        int count = 1;
+         while(i < 5){
+	       i++;
+	       gpio_base[7] = 1 << 25;
+               gpio_base[10] = 1 << 18;
+               ssleep(count);
+
+               gpio_base[7] = 1 << 18;
+               gpio_base[10] = 1 << 25;
+               ssleep(count);
+
+	       if (i == 6){
+		       break;
+	       }
+	 }
+       }
 
 	return 1;
 }
